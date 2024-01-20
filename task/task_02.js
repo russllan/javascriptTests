@@ -39,6 +39,6 @@ function solveFibonacci(n) {
     };
 }
 
-console.log(solveFibonacci(5));
+console.log(solveFibonacci(500));
 
 module.exports = solveFibonacci;
