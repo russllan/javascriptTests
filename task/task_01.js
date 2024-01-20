@@ -14,6 +14,6 @@ function solveQuadraticEquation(a, b, c) {
 }
 
 // Примеры использования
-console.log(solveQuadraticEquation(1, -3, 2));
+// console.log(solveQuadraticEquation(1, -3, 2));
 
 module.exports = solveQuadraticEquation;
