@@ -33,6 +33,62 @@ describe("Проверка бинарного поиска", () => {
       ],
       key: 2971215073,
       expected: 47,
+    }, // static
+    {
+      arr: [17],
+      key: 17,
+      expected: 0,
+    },
+    {
+      arr: [17],
+      key: 0,
+      expected: -1,
+    },
+    {
+      arr: [17, 21, 23, 29],
+      key: 17,
+      expected: 0,
+    },
+    {
+      arr: [9, 16, 18, 30, 31, 41, 45],
+      key: 45,
+      expected: 6,
+    },
+    {
+      arr: [17, 18, 21, 23, 29, 38, 41],
+      key: 23,
+      expected: 3,
+    },
+    {
+      arr: [17, 18, 21, 23, 29, 33, 38],
+      key: 21,
+      expected: 2,
+    },
+    {
+      arr: [12, 18, 21, 23, 32],
+      key: 23,
+      expected: 3,
+    },
+    {
+      arr: [21, 23, 29, 33, 38],
+      key: 25,
+      expected: -1,
+    },
+    {
+      // sort
+      arr: [5, 1, -5, 13, 4, 25, -20],
+      key: 13,
+      expected: 5,
+    }, // четные и нечетные
+    {
+      arr: [1, 2, 3, 4, 5],
+      key: 4,
+      expected: 3,
+    },
+    {
+      arr: [1, 2, 3, 4, 5, 6],
+      key: 5,
+      expected: 3,
     },
   ];
   testCase.forEach((item) => {
