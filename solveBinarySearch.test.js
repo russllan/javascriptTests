@@ -90,27 +90,72 @@ describe("Проверка бинарного поиска", () => {
     //   key: 5,
     //   expected: 3,
     // },
+    // {
+    //   arr: [1,2,3],
+    //   key: 0,
+    //   expected: -1
+    // },
+    // {
+    //   arr: [1,2,3],
+    //   key: 2,
+    //   expected: 1
+    // },
+    // {
+    //   arr: [1,2,3],
+    //   key: 3,
+    //   expected: 2
+    // },
+    // {
+    //   arr: [1,2,3],
+    //   key: 1,
+    //   expected: 0
+    // },
+
+    // laba 6 test for while
     {
-      arr: [1,2,3],
-      key: 0,
-      expected: -1
+      // Полный прогон
+      arr: [5, 10, 12, 37],
+      key: 37,
+      expected: 3,
     },
     {
-      arr: [1,2,3],
-      key: 2,
-      expected: 1
+      // 1 итерации
+      arr: [5, 10, 12, 37],
+      key: 10,
+      expected: 1,
     },
     {
-      arr: [1,2,3],
-      key: 3,
-      expected: 2
+      // 2 итерации
+      arr: [5, 10, 12, 37],
+      key: 5,
+      expected: 0,
     },
     {
-      arr: [1,2,3],
-      key: 1,
-      expected: 0
+      // m < n ; m = 3
+      arr: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+      key: 16,
+      expected: 15,
+    },
+    {
+      // n-1 ; n = 4
+      arr: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+      key: 16,
+      expected: 15,
+    },
+    {
+      // n iteration ; n = 5
+      arr: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+      key: 16,
+      expected: 15,
+    },
+    {
+      // n + 1 ; n = 6
+      arr: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+      key: 16,
+      expected: 15,
     },
   ];
+
   testCase.forEach((item) => {
     it(`Массив: [${item.arr}] и ключа: ${item.key}`, () => {
       const res = binarySearch(item.arr, item.key);

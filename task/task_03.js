@@ -4,6 +4,8 @@ function binarySearch(arr, key) {
     let left = 0;
     let right = arr.length - 1;
   
+
+    
     while (left <= right) {
       const mid = Math.floor((left + right) / 2);
       
