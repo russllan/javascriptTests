@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceFolder}/task_03.js",
+        "stopOnEntry": false,
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "preLaunchTask": null,
+        "runtimeExecutable": null,
+        "runtimeArgs": [
+          "--nolazy",
+          "--inspect-brk=0.0.0.0:9229"
+        ],
+        "port": 9229,
+        "console": "integratedTerminal",
+        "sourceMaps": true,
+        "outFiles": []
+      }
+    ]
+  }
+  
